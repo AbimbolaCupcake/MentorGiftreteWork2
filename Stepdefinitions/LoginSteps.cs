@@ -14,6 +14,42 @@ namespace MentorGiftreteWork2.Stepdefinitions
             loginpages = new Loginpages();
         }
 
+        [Given(@"I click on Search")]
+        public void GivenIClickOnSearch()
+        {
+            loginpages.ClickOnSearch();
+        }
+
+
+        [Then(@"I should be logged out")]
+        public void ThenIShouldBeLoggedOut()
+        {
+            loginpages.BeLoggedOut();
+
+        }
+
+
+        [When(@"I click on logout")]
+        public void WhenIClickOnLogout()
+        {
+
+            loginpages.ClickOnLogout();
+        }
+
+
+        [When(@"I click on your profile name")]
+        public void WhenIClickOnYourProfileName()
+        {
+            loginpages.ClickOnYourProfileName();
+
+        }
+
+        [Given(@"I click on Community")]
+        public void GivenIClickOnCommunity()
+        {
+            loginpages.ClickOnCommunity();
+        }
+
 
         [Then(@"I should be logged in")]
         public void ThenIShouldBeLoggedIn()
@@ -29,22 +65,6 @@ namespace MentorGiftreteWork2.Stepdefinitions
         }
 
 
-
-
-        [Given(@"you click on Search")]
-        public void GivenYouClickOnSearch()
-        {
-            loginpages.ClickOnSearch();
-        }
-
-
-
-        [Given(@"you click on Community")]
-        public void GivenYouClickOnCommunity()
-        {
-            loginpages.ClickOnCommunity();
-        }
-
         [Then(@"Communities should be displayed")]
         public void ThenCommunitiesShouldBeDisplayed()
         {
@@ -58,23 +78,6 @@ namespace MentorGiftreteWork2.Stepdefinitions
             
         }
 
-        [When(@"you click on your profile name")]
-        public void WhenYouClickOnYourProfileName()
-        {
-            loginpages.ClickOnYourProfileName();
-        }
-
-        [When(@"you click on logout")]
-        public void WhenYouClickOnLogout()
-        {
-            loginpages.ClickOnLogout();
-        }
-
-        [Then(@"you should be logged out")]
-        public void ThenYouShouldBeLoggedOut()
-        {
-            loginpages.BeLoggedOut();
-        }
 
 
         [Given(@"I navigate to giftrete website ""(.*)""")]

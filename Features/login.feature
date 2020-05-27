@@ -10,27 +10,27 @@ Background:
 	And I enter my Email Address"aaransiola@yahoo.com"
 	And I enter my Password"mysecurepassword"
 	And I click Signin
-	Then I should be logged in
+	
 
 @mytag
 Scenario: Logout
 	Given I am on the login page
-	When you click on your profile name
-	And you click on logout
-	Then you should be logged out
+	When I click on your profile name
+	And I click on logout
+	Then I should be logged out
 
 Scenario: CommunityPage
-	Given you click on Community                  
+	Given I click on Community                  
 	Then Communities should be displayed    
-	When you click on your profile name
-	And you click on logout
-	Then you should be logged out
+	When I click on your profile name
+	And I click on logout
+	Then I should be logged out
 
 
 Scenario: Searchpage
-	Given you click on Search 
+	Given I click on Search 
 	Then all items should be displayed 
-	When you click on your profile name
-	And you click on logout
-	Then you should be logged out
+	When I click on your profile name
+	And I click on logout
+	Then I should be logged out
 
